@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.firstBurger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background-color: #B526FF;
+}
+
+.purpleBurger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 60px;
+}
+
+.purpleBurger>span {
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    transition: top 0.2s 0.2s, bottom 0.2s 0.2s, opacity 0.2s 0.2s, transform 0.2s 0.4s;
+    z-index: 1;
+}
+
+.purpleBurger.active {
+    transform: rotate(-90deg);
+}
+
+.purpleBurger>span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.purpleBurger>span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.purpleBurger.active span:nth-of-type(1) {
+    top: calc(50% - 5px);
+    transform: rotate(45deg);
+}
+
+.purpleBurger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.purpleBurger.active span:nth-of-type(3) {
+    bottom: calc(50% - 5px);
+    transform: rotate(-45deg);
+}
+
+/* -------------------------- second burger ----------------------- */
+.secondBurger {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: #FA4681;
+}
+
+.pinkBurger {
+    position: fixed;
+    top: 20px;
+    right: 120px;
+    height: 50px;
+    width: 60px;
+}
+
+.pinkBurger>span {
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    transition: top 0.2s 0.2s, bottom 0.2s 0.2s, opacity 0.2s 0.2s, transform 0.2s 0.4s;
+    z-index: 1;
+}
+
+.pinkBurger.active {
+    transform: rotate(90deg);
+}
+
+.pinkBurger>span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.pinkBurger>span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.pinkBurger.active span:nth-of-type(1) {
+    top: calc(50% - 5px);
+    transform: rotate(-45deg);
+}
+
+.pinkBurger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.pinkBurger.active span:nth-of-type(3) {
+    bottom: calc(50% - 5px);
+    transform: rotate(45deg);
+}
+
+/* -------------------------- third burger ----------------------- */
+.thirdBurger {
+    position: absolute;
+    top: 0;
+    right: 200px;
+    height: 100px;
+    width: 100px;
+    background-color: #E3815B;
+}
+
+.orangeBurger {
+    position: fixed;
+    top: 20px;
+    right: 220px;
+    height: 50px;
+    width: 60px;
+}
+
+.orangeBurger>span {
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    border-radius: 7px;
+    transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 1;
+}
+
+.orangeBurger.active {
+    transform: rotate(-90deg);
+}
+
+.orangeBurger>span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.orangeBurger>span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.orangeBurger.active span:nth-of-type(1) {
+    transform: rotate(45deg) translateY(-70%) translateX(25%) scale(0.8);
+}
+
+.orangeBurger.active span:nth-of-type(3) {
+    bottom: 0;
+    transform: rotate(-44deg) translateY(70%) translateX(25%) scale(0.8);
+}
+
+/* -------------------------- fourth burger ----------------------- */
+.fourthBurger {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    height: 100px;
+    width: 100px;
+    background-color: #FABF57;
+}
+
+.yellowBurger {
+    position: fixed;
+    top: 20px;
+    right: 320px;
+    height: 50px;
+    width: 60px;
+    overflow: hidden;
+}
+
+.yellowBurger>span {
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.yellowBurger.active {
+    transform: rotate(180deg);
+}
+
+.yellowBurger>span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.yellowBurger>span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.yellowBurger.active span:nth-of-type(1) {
+    top: calc(50% - 5px);
+    transform: rotate(45deg);
+}
+
+.yellowBurger.active span:nth-of-type(2) {
+    opacity: 1;
+    transform: translateX(-100px);
+}
+
+.yellowBurger.active span:nth-of-type(3) {
+    bottom: calc(50% - 5px);
+    transform: rotate(-45deg)
+}
